@@ -1,0 +1,132 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+/* Custom Properties */
+:root{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue:hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+/* Utilities */
+.flex{
+    display:flex;
+}
+
+.desaturatedBlue{
+    color: var(--desaturatedBlue);
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.gap1em{
+    gap:1em;
+}
+
+.borderRadius{
+    border-radius: .75em;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.marginCenter{
+    margin: 0 auto;
+}
+
+/* Frontend Mentor Attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Styles */
+
+.cancel{
+    color: var(--desaturatedBlue);
+    padding-top: 1em;
+    padding-bottom: 2em;
+    text-decoration: none;
+}
+.cancel:active{
+    color: var(--darkBlue);
+}
+
+.change{
+    text-decoration: underline;
+    color: var(--brightBlue);
+}
+
+.container{
+    width: 90%;
+    background-color: white;
+    max-width: 400px;
+}
+
+.cta{
+    padding: .6em;
+    background-color: var(--brightBlue);
+    color:white;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    cursor: pointer;
+}
+
+.cta:active{
+    background-color: hsl(245, 75%, 69%);
+}
+
+.hero{
+    border-radius: .75em .75em 0 0;
+}
+
+.icon{
+    padding-right: 1em;
+}
+
+.inner-container{
+    width: 80%;
+    text-align: center;
+}
+
+.plan{
+    align-items:center;
+    justify-content: space-between;
+    background-color: var(--veryPaleBlue);
+    padding:1em;
+    color: var(--darkBlue);
+}
+
+.price{
+    font-weight: lighter;
+    display:block;
+}
+
+
+
+.wrapper{
+    padding: 4rem 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--paleBlue);
+    background-image: url("../images/pattern-background-mobile.svg");
+   
+}
+
+
+
+
+@media (min-width: 1050px){
+    .wrapper{
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;  
+    }
+}
